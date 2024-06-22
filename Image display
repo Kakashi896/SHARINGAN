@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Image Display</title>
+<style>
+    .live-image {
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        border: 1px solid #ccc; /* Optional border for styling */
+    }
+</style>
+</head>
+<body>
+    <img class="live-image" src="path_to_your_image" alt="Live Image">
+</body>
+</html>
