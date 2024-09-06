@@ -1,0 +1,32 @@
+@media (max-width: 480px) {
+    header{
+        height: 122px;
+    }
+    .container{
+        height: 135px;
+        padding: 0 2vw;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        padding: 0 4px;
+        font-size: 8px;
+    }
+    .right{
+        flex-direction: column;
+    }
+    .rightbox{
+        flex-direction: row;
+        display: flex;
+        margin: 12px;
+    }
+    .rush img{
+       width: 440px;
+    }
+    .lastimg img{
+        width: 340px;
+        text-align: center;
+    }
+}

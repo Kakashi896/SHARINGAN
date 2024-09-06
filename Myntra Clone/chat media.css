@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .search {
+        width: 80vw;
+    }
+    .left img {
+        height: 50px;
+        width: 50px;
+    }
+    nav ul {
+        display: none;
+    }
+    .rightbox {
+        flex-direction: column;
+    }
+    .flat img {
+        width: 100%;
+    }
+    .item img {
+        width: 30vw;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid img {
+        width: 30vw;
+    }
+}
