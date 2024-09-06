@@ -1,0 +1,463 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Top Order page */
+
+body {
+    background-color: black;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.6) url("Assests/Images/bg2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+    height: 90vh;
+    position: relative;
+    background-blend-mode: darken;
+}
+
+nav {
+    max-width: 78vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: rgb(207, 17, 17);
+    position: relative;
+    z-index: 10;
+    /* width: 130px; */
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    margin-top: 140px;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 23px;
+    padding: 26px;
+}
+
+.hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 45px;
+    font-weight: 900;
+    z-index: 10;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.line {
+    height: 8px;
+    background-color: rgb(33, 33, 33);
+}
+
+.btn {
+    padding: 7px 39px 7px 39px;
+    font-weight: bold;
+    background-color: white;
+    background: rgba(23, 23, 23, 0.3);
+    color: white;
+    font-size: 15px;
+    border: 2px solid rgba(23, 23, 23, 0.3);
+}
+
+.red-btn:hover {
+    background-color: rgb(163, 8, 8);
+    cursor: pointer;
+    border: 2px solid rgb(163, 8, 8);
+}
+
+.red-btn {
+    margin-left: 15px;
+    padding: 7px 18px 7px 18px;
+    background-color: rgb(207, 17, 17);
+    color: white;
+    border: 2px solid rgb(207, 17, 17);
+}
+
+.red-btn-get:hover {
+      background-color: rgb(163, 8, 8);
+      cursor: pointer;
+}
+
+.red-btn-get {
+    background-color: rgb(207, 17, 17);
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 15px 54px;
+    border: rgb(207, 17, 17);
+    ;
+}
+
+.main input {
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 18px 105px 17px 12px;
+    background: rgba(23, 23, 23, 0.8);
+    color: white;
+    border: 2px solid rgba(23, 23, 23, 0.8);
+}
+
+/* First Section */
+
+
+.first {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.secimg {
+    position: relative;
+    top: 0;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    top: 89px;
+    right: 78px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first>div :nth-child(1) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Second Secotion */
+
+.second {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+section.second>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second>div :nth-child(1) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.second>div :nth-child(2) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Third Section */
+
+
+.third {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.third video {
+    position: absolute;
+    right: 115px;
+    top: 45px;
+}
+
+section.third>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.third>div :nth-child(1) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.third>div :nth-child(2) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Fourth Section */
+
+
+.fourth {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+section.fourth>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fourth>div :nth-child(1) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.fourth>div :nth-child(2) {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* Faq */
+
+.faq h1 {
+    text-align: center;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.faqbox:hover {
+    background-color: rgb(52, 40, 40);
+    color: rgb(207, 17, 17);
+    font-weight: bold;
+}
+
+.faqbox {
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    background-color: rgb(55, 54, 54);
+    padding: 20px;
+    max-width: 70vw;
+    margin: 24px auto;
+    justify-content: space-between;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.btn2 {
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 18px 105px 17px 12px;
+    background: rgba(23, 23, 23, 0.8);
+    color: white;
+    border: 2px solid rgba(23, 23, 23, 0.8);
+}
+
+.bot {
+    text-align: center;
+    margin: 50px
+}
+
+.bot :nth-child(2) {
+    margin-top: 24px;
+}
+
+/* Foot */
+
+footer {
+    color: white;
+    max-width: 75vw;
+    margin: auto;
+    height: 50vh;
+}
+
+footer .que {
+    padding: 30px 0px;
+}
+
+.foot a {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.foot {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.foot-itm {
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    padding: 25px;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-family: 400;
+    font-size: 14px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+    .second {
+        flex-wrap: wrap;
+    }
+    .third {
+        flex-wrap: wrap;
+    }
+    .fourth {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .foot-itm{
+        align-items: center;
+    }
+ 
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.foot a {
+    font-size: 14px;
+    color: white;
+}
+
+.foot-itm {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
