@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vh;
+    background-color: rgba(0, 0, 23, 0.603);    ;
+}
+.right img{
+    border-radius: 100px;
+}
+.centre ul, .right ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.centre li, .right li{
+
+}
+.img{
+  position: relative;
+  left: 130px;
+}
+.centre a, .right a{
+text-decoration: none;
+font-size: 21px;
+color: rgb(184, 180, 180);
+margin: 0px 0px 0px 50px;
+}
+.container{
+    /* display: flex;
+    flex-direction: column; */
+   margin-top: 2px;
+   height: 70vh;
+   background-image: url(Assests/image\ 1.jpg);
+   background-size: cover;
+   /* background-attachment: scroll; */
+   padding: 60px 0px 0px 50px;
+}
+.container :nth-child(1){
+    font-size: 40px;
+    font-family: "Amazon Ember";
+    line-height: 45px;
+    font-weight: 500;
+}
+.container :nth-child(2){
+    font-size: 21px;
+    font-family: "Amazon Ember";
+    line-height: 45px;
+    font-weight: 400;
+    max-width: 42vw;
+    margin-top: 20px;
+}
+.container :nth-child(3){
+    font-size: 21px;
+    font-family: "Amazon Ember";
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(37, 128, 207);
+    background-color: rgb(37, 128, 207);
+    padding: 11px 40px 11px 40px;
+    margin-top: 40px;
+}
+.container2{
+    padding: 60px 0px 0px 50px;
+    background-image: url(Assests/image\ 2.jpg);
+    /* border: 1px solid  white; */
+    height: 65vh;
+    background-size: cover;
+}
+.container2 :nth-child(1){
+    font-size: 40px;
+    font-family: "Amazon Ember";
+    line-height: 45px;
+    font-weight: 500;
+}
+.container2 :nth-child(2){
+    font-size: 21px;
+    font-family: "Amazon Ember";
+    line-height: 45px;
+    font-weight: 400;
+    max-width: 42vw;
+    margin-top: 20px;
+}
+.container2 :nth-child(3){
+    font-size: 21px;
+    font-family: "Amazon Ember";
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(37, 128, 207);
+    background-color: rgb(37, 128, 207);
+    padding: 11px 40px 11px 40px;
+    margin-top: 40px;
+}
+.container3{
+    height: 85vh;
+    background-color: white;
+    display: flex;
+}
+.text :nth-child(2){
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 35px 0px 0px 50px;
+}
+.text :nth-child(1){
+    color: black;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 60px 0px 0px 50px;
+}
+
+.container .images{
+    justify-content: right;
+}
+.images{
+    margin-top: 10px;
+    justify-content: right;
+    max-width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+.images:hover{
+  
+}
+.container3 img{
+    width: 220px;
+}
+.container4{
+    background-color: rgb(37, 36, 36);
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container4 ul{
+    display: flex;
+    list-style: none;
+    
+}
+.container4 a:hover{
+     color:  rgb(23, 176, 241);
+}
+.container4 p{
+    color: gray;
+    margin-top: 10px;
+}
+.container4 a{
+    font-size: 17px;
+    margin: 10px 0px 0px 15px;
+    text-decoration: none;
+    color: rgb(5, 153, 217);
+
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container, .container2, .container3 {
+        /* background-attachment: fixed; */
+        flex-direction: column;
+        padding: 30px 20px;
+        /* text-align: center; */
+
+    }    
+    .head {
+        flex-direction: column;
+        height: auto;
+    }
+    .img {
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .centre ul, .right ul {
+        flex-direction: column;
+    }
+    .centre a, .right a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .images{
+        /* margin-top: 10px; */
+        width: 30px;
+    justify-content: right;
+    max-width: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content:space-evenly; */
+    }
+    .text{
+        color: black;
+    font-size: 15px;
+    font-weight: 200;
+    /* padding: 60px 0px 0px 50px; */
+
+    }
+}
+@media (max-width: 768px) {
+    .container, .container2, .container3 {
+        /* background-attachment: fixed; */
+        flex-direction: column;
+        padding: 30px 20px;
+        /* text-align: center; */
+    }
+    .container :nth-child(1), .container2 :nth-child(1) {
+        font-size: 30px;
+    }
+    .container :nth-child(2), .container2 :nth-child(2) {
+        font-size: 15px;
+        max-width: 60%;
+    }
+    .container :nth-child(3), .container2 :nth-child(3) {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .container3 {
+        height: 120vh;
+        flex-direction: column;
+    }
+    .text :nth-child(1) {
+        font-size: 35px;
+        padding: 30px 0px 0px 0px;
+    }
+    .text :nth-child(2) {
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+    }
+    .images {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        max-height: 10%;
+        left: 707px;
+        top: 1034px;
+        width: 10px;
+    }
+    .container3 img {
+        width: 150px;
+        margin: 10px;
+    }
+    .container4{
+        height: 30vh;
+        padding-top:5px ;
+    }
+}
+@media (max-width: 480px) {
+
+    .container, .container2, .container3 {
+        /* background-attachment: fixed; */
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .container :nth-child(1), .container2 :nth-child(1) {
+        font-size: 25px;
+    }
+    .container :nth-child(2), .container2 :nth-child(2) {
+        font-size: 16px;
+    }
+    .container :nth-child(3), .container2 :nth-child(3) {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    .container3 img {
+        width: 120px;
+    }
+    .container3{
+        background-image: url(Assests/image\ 2.jpg);
+        height: 90vh;
+    }
+    .images {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-height: 10%;
+        left: 415px;
+        top: 1834px;
+        width: 10px;
+    }
+    .container4{
+        height: 30vh;
+        padding-top:5px ;
+    }
+}
