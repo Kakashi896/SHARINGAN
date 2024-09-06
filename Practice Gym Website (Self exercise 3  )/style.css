@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+.container {
+    /* border: 1px solid white; */
+    display: flex;
+    background: rgba(0, 0, 0, 0.1) url(Assests/img5.jpg);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+}
+.low{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.head{
+    text-align: center;
+    margin-top: 90px;
+    font-weight: 800;
+    font-size: 44px;
+}
+.entry{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.entry button{
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(197, 22, 22);
+    padding: 8px 20px 8px 20px;
+    border: 2px solid rgb(197, 22, 22);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.entry button:hover{
+    border: 2px solid rgb(204, 34, 34);
+    background-color: rgb(206, 39, 39);
+}
+.container input{
+    cursor:default;
+    color: black;
+    background-color: grey;
+    padding: 20px 60px 20px 60px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    font-size: 20px;
+}
+input::placeholder{
+    color: black;
+}
+nav {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    margin: 25px auto 0;
+    background: transparent;
+}
+.logo img {
+    width: 80px;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav ul li {
+    margin: 0 20px;
+    font-size: 18px;
+}
+.nav ul li:hover {
+    /* background-color: grey; */
+    color: rgb(204, 34, 34);
+    border-radius: 8px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+.line {
+    background-color: rgb(58, 58, 58);
+    height: 5px;
+    width: 100%;
+}
+.container2, .container3, .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: row;
+}
+.container2 img, .container3 img, .container4 img {
+    max-width: 35%;
+    flex: 1 1 200px;
+    margin: 20px;
+}
+.container2 p, .container3 p, .container4 p {
+    flex: 1 1 100%;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 900;
+    margin: 20px;
+    max-width: 100%;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    flex: 1 1 auto;
+    margin: 20px 0;
+}
+.footer ul li {
+    margin: 40px 0;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+.footer p {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 60px 0;
+    right: 480px;
+    color: white;
+}
+/* Style the popup container */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0d0d0d;
+    padding: 20px;
+    border: 1px solid #070707;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 90%;
+    z-index: 1000;
+  }
+  
+  /* Style the close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Style the login form */
+  #login-form {
+    margin-top: 20px;
+  }
+  
+  #login-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #login-form input[type="text"], #login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0c0c0c;
+  }
+  
+  #login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #01b907;
+    color: #0a0808;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form button[type="submit"]:hover {
+    background-color: #37a93b;
+  }
+  
+  /* Hide the popup by default */
+  .popup {
+    display: none;
+  }
+
+/* Media Queries */
+@media only screen  and (min-width: 480px) {
+    .nav ul li {
+        margin: 30px 80px;
+    }
+    .container2 img, .container3 img, .container4 img {
+        flex: 1 1 300px;
+        margin: 20px;
+    }
+    .container2 p, .container3 p, .container4 p {
+        flex: 1 1 300px;
+        max-width: 600px;
+    }
+    .footer ul {
+        margin: 20px 40px 0;
+    }
+    .footer p{
+        /* left: 9000px; */
+    }
+    .entry{
+        gap: 10;
+    }
+    /* .entry button{
+        padding: 4px 10px 4px 10px;
+    }
+    .entry input{
+        padding: 8px 30px 8px 30px;
+    } */
+}
